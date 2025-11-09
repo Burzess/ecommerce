@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-poppins;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-roboto;
+    }
+}
+
+@layer components {
+    /* E-commerce Components */
+    .size-selector input:checked + label {
+        @apply bg-primary text-white;
+    }
+    .color-selector input:checked + label {
+        @apply ring-2 ring-primary;
+    }
+    .input-box {
+        @apply block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded placeholder-gray-400 focus:border-primary focus:ring-0;
+    }
+
+    /* TailAdmin Custom Styles - Essential Classes */
+    .text-title-md {
+        @apply text-3xl font-bold leading-tight;
+    }
+
+    .text-bodydark {
+        @apply text-gray-300;
+    }
+
+    .text-bodydark1 {
+        @apply text-gray-200;
+    }
+
+    .text-bodydark2 {
+        @apply text-gray-400;
+    }
+
+    .text-body {
+        @apply text-gray-600;
+    }
+
+    .bg-boxdark {
+        @apply bg-gray-800;
+    }
+
+    .bg-boxdark-2 {
+        @apply bg-gray-900;
+    }
+
+    .bg-graydark {
+        @apply bg-gray-700;
+    }
+
+    .bg-meta-2 {
+        @apply bg-gray-100;
+    }
+
+    .bg-meta-4 {
+        @apply bg-gray-600;
+    }
+
+    .text-meta-1 {
+        @apply text-red-500;
+    }
+
+    .text-meta-3 {
+        @apply text-green-500;
+    }
+
+    .text-meta-5 {
+        @apply text-yellow-500;
+    }
+
+    .border-stroke {
+        @apply border-gray-200;
+    }
+
+    .border-strokedark {
+        @apply border-gray-700;
+    }
+
+    .shadow-default {
+        @apply shadow-lg;
+    }
+
+    .bg-primary {
+        @apply bg-blue-600;
+    }
+
+    .text-primary {
+        @apply text-blue-600;
+    }
+
+    .z-999999 {
+        z-index: 999999;
+    }
+
+    .z-9999 {
+        z-index: 9999;
+    }
+
+    .z-999 {
+        z-index: 999;
+    }
+}
